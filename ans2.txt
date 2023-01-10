@@ -1,0 +1,5 @@
+Perform git init command in the folder
+Perform git add  to add  text file
+Perform git commit -m "any message"
+Perform git remote add origin
+Perform git push -u -f origin master
