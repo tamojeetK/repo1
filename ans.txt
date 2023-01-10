@@ -1,0 +1,13 @@
+Using the SSH protocol, we can connect and authenticate to remote servers and services.
+With SSH keys, we can connect to GitHub without supplying our username and personal access token at each visit.
+we can access and write data in repositories on GitHub.com using SSH (Secure Shell Protocol).
+we can also use SSH to sign commits and tags.
+steps to generate ssh key 
+Open Git Bash.
+paste- $ ssh-keygen -t ed25519 -C "your_email@example.com"
+ Enter passphrase (empty for no passphrase): [Type a passphrase]
+ Enter same passphrase again: [Type passphrase again]
+# start the ssh-agent in the background
+$ eval "$(ssh-agent -s)"
+> Agent pid 59566
+$ ssh-add ~/.ssh/id_ed25519
